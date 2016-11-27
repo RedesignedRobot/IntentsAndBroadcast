@@ -17,8 +17,6 @@ public class MyReceiver extends BroadcastReceiver {
 
     MainActivity mainActivity = new MainActivity();
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
-    @Override
     public void onReceive(Context context, Intent intent) {
 
        mainActivity.trigger(context, intent);
